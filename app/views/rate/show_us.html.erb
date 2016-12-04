@@ -1,0 +1,5 @@
+<h1>本日の為替</h1>
+<!-- <p>Find me in app/views/rate/show.html.erb</p> -->
+Date:<%= @result_usd['query']['results']['rate']['Date'] %><br>
+Rate: USD/JPY <br>
+　　　1ドル＝<%= @result_usd['query']['results']['rate']['Rate'] %>円

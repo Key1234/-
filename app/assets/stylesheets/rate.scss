@@ -1,3 +1,30 @@
 // Place all the styles related to the Rate controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+  .boxA:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .box1 {float: left;
+        width: 15%}
+  .box2 {float: left;
+        width: 15%}
+  .box3 {float: left}
+
+  .boxB:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .box4 {float: left;
+    width: 15%}
+  .box5 {float: left;
+        width: 15%}
+
+.country {font-weight:bold}
+
+.us {
+    margin-top: 5%;
+    display: block;
+    margin-left: 7%}

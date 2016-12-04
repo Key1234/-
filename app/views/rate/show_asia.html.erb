@@ -1,0 +1,35 @@
+<h1>
+Asia　　
+  <%=Time.strptime(@result_asia['query']['results']['rate'][0]['Date'],'%m/%d/%Y').strftime("%Y/%m/%d") %>
+　　<%= @result_asia['query']['results']['rate'][0]['Time'] %>
+</h1><br>
+<div class="boxA">
+<div class="box1">
+  <span class="country">JPY/CHY</span><br>
+  　1円＝<%= @result_asia['query']['results']['rate'][0]['Rate'] %>元
+</div>
+<div class="box2">
+  <span class="country">JPY/KRW</span> <br>
+　1円＝<%= @result_asia['query']['results']['rate'][1]['Rate'] %>ウォン
+</div>
+<div class="box3">
+ <span class="country">JPY/IDR</span> <br>
+　1円＝<%= @result_asia['query']['results']['rate'][2]['Rate'] %>ルピア
+</div>
+</div>
+<div class="boxB">
+<div class="box4">
+ <span class="country">JPY/VND</span> <br>
+　1円＝<%= @result_asia['query']['results']['rate'][3]['Rate'] %>ドン
+</div>
+<div class="box5">
+ <span class="country">JPY/THB</span> <br>
+　1円＝<%= @result_asia['query']['results']['rate'][4]['Rate'] %>バーツ
+</div>
+<div class="box6">
+ <span class="country">JPY/MMK</span> <br>
+　1円＝<%= @result_asia['query']['results']['rate'][5]['Rate'] %>チャット
+</div>
+</div>
+
+<a href="http://localhost:3000/rate/show_us" class="us" target="_blank">US</a>
